@@ -1,0 +1,18 @@
+:root {
+    --azul-escuro: #71A1AD;
+    --azul-cinza: #909CB6;
+}
+
+body {
+    color: black;
+    font-size: 1em;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-item:hover {
+    color: var(--azul-cinza);
+}
