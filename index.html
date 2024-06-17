@@ -36,7 +36,7 @@
                                 <a class="nav-link" href="sobre.html">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="calendario.html">Calendário</a>
+                                <a class="nav-link" href="calendario.html">Calendário de vacina</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="perguntas.html">Perguntas Frequentes</a>
@@ -91,52 +91,23 @@
         <section class="noticias-vacina">
             <div class="container mb-3">
                 <h2 class="mt-5 mb-4 text-center">Notícias</h2>
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="card news-card">
-                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Vacinação contra a COVID-19</h5>
-                        <p class="card-text">Começa a segunda fase da vacinação contra a COVID-19 em Bauru. Saiba mais sobre os grupos prioritários e os locais de vacinação.</p>
-                        <a href="#" class="btn btn-primary">Leia Mais</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card news-card">
-                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Campanha de Vacinação contra a Gripe</h5>
-                        <p class="card-text">Confira os detalhes da campanha de vacinação contra a gripe em Bauru. Proteja-se e previna-se contra a influenza.</p>
-                        <a href="#" class="btn btn-primary">Leia Mais</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card news-card">
-                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Vacinação Infantil</h5>
-                        <p class="card-text">Saiba mais sobre o calendário de vacinação infantil em Bauru e mantenha as crianças protegidas contra diversas doenças.</p>
-                        <a href="#" class="btn btn-primary">Leia Mais</a>
-                      </div>
-                    </div>
-                  </div>
+                <div class="row" id="noticias-container">
+
                 </div>
-              </div>
+            </div>
         </section>
+
+        
     </main>
     <footer class="bg-dark text-light py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <a class="footer-item" href="">Sobre</a>
-                </div>
+                
                 <div class="col-md-6">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a class="footer-item" href="perguntas.html">Perguntas Frenquentes</a></li>
-                        <li><a class="footer-item" href="">Sobre nós</a></li>
+                        <li><a class="footer-item" href="sobre.html">Sobre nós</a></li>
                         <li><a class="footer-item" href="calendario.html">Calendário de vacinação</a></li>
                     </ul>
                 </div>
@@ -150,6 +121,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- Firebase App (base) -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <!-- Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+    <script type="module" src="noticias.js"></script>
 </body>
 
 </html>

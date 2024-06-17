@@ -49,19 +49,73 @@
         </nav>
     </header>
     <main>
+        <section class="carrossel pt-5">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/1.png" alt="">
+                        <img class="w-100 img-fluid d-md-block d-none d-lg-none" src="./assets/Tablet/1.png" alt="">
+                        <img class="w-100 img-fluid d-none d-lg-block" src="./assets/Desktop/1.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/2.png" alt="">
+                        <img class="w-100 img-fluid d-md-block d-none d-lg-none" src="./assets/Tablet/2.png" alt="">
+                        <img class="w-100 img-fluid d-none d-lg-block" src="./assets/Desktop/2.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/3.png" alt="">
+                        <img class="w-100 img-fluid d-md-block d-none d-lg-none" src="./assets/Tablet/3.png" alt="">
+                        <img class="w-100 img-fluid d-none d-lg-block" src="./assets/Desktop/3.png" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="calendario-vacinas d-flex justify-content-center align-items-center">
+            <div class="container">
+                <h2 class="mt-5 mb-4 text-center">Calendário de Vacinas</h2>
+        
+                <div class="mb-3">
+                    <div class="d-grid gap-2">
+                        <button id="btn-adolescente" class="btn btn-dark">Calendário para Adolescentes</button>
+                        <button id="btn-adulto" class="btn btn-dark">Calendário para Adultos e Idosos</button>
+                        <button id="btn-gestante" class="btn btn-dark">Calendário para Gestantes</button>
+                        <button id="btn-crianca" class="btn btn-dark">Calendário para Crianças</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
 
     </main>
     <footer class="bg-dark text-light py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <a class="footer-item" href="">Sobre</a>
-                </div>
+                
                 <div class="col-md-6">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a class="footer-item" href="">Perguntas Frenquentes</a></li>
-                        <li><a class="footer-item" href="">Sobre nós</a></li>
+                        <li><a class="footer-item" href="perguntas.html">Perguntas Frenquentes</a></li>
+                        <li><a class="footer-item" href="sobre.html">Sobre nós</a></li>
                         <li><a class="footer-item" href="calendario.html">Calendário de vacinação</a></li>
                     </ul>
                 </div>
@@ -75,6 +129,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <!-- Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+    <script type="module" src="calendarios.js"></script>
 </body>
 
 </html>
