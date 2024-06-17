@@ -17,7 +17,7 @@ export function carregarNoticias() {
                             <div class="card-body">
                                 <h5 class="card-title">${noticia.titulo}</h5>
                                 <p class="card-text">${noticia.descricao}</p>
-                                <a href="${noticia.link}" class="btn btn-primary">Leia Mais</a>
+                                <a href="${noticia.link}" class="btn btn-dark">Leia Mais</a>
                             </div>
                         </div>
                     </div>`;
