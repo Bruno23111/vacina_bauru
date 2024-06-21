@@ -36,16 +36,15 @@
                                 <a class="nav-link" href="sobre.html">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="calendario.html">Calendário de vacina</a>
+                                <a class="nav-link" href="calendario.html">Calendário de vacina</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="perguntas.html">Perguntas Frequentes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="creditos.html">Créditos</a>
+                                <a class="nav-link active" href="creditos.html">Créditos</a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -92,23 +91,57 @@
             </div>
         </section>
 
-        <section class="calendario-vacinas d-flex justify-content-center align-items-center">
-            <div class="container">
-                <h2 class="mt-5 mb-4 text-center">Calendário de Vacinas</h2>
+        <section class="noticias-vacina">
+            <div class="container mt-5">
+                <div class="text-center mb-5">
+                    <h1>Créditos</h1>
+                    <p>Agradecimentos a todos que contribuíram para este projeto</p>
+                </div>
         
-                <div class="mb-3">
-                    <div class="d-grid gap-2">
-                        <button id="btn-adolescente" class="btn btn-dark">Calendário para Adolescentes</button>
-                        <button id="btn-adulto" class="btn btn-dark">Calendário para Adultos e Idosos</button>
-                        <button id="btn-gestante" class="btn btn-dark">Calendário para Gestantes</button>
-                        <button id="btn-crianca" class="btn btn-dark">Calendário para Crianças</button>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Projeto de Extensão: FÁBRICA DE SOFTWARE: DESENVOLVIMENTO DE WEBSITES, APLICATIVOS E JOGOS</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Professor Coordenador:</strong> Prof. Dr. Elvio Gilberto da Silva.</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Desenvolvedor: </h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Bruno Bomfim Lima - Estudante de Ciência da Computação</li>
+                          
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Desenvolvimento</h2>
+                    </div>
+                    <div class="card-body text-center">
+                        <img class="img-fluid" src="./assets/Ciencia_da_Computacao.jpg" alt="Logo Ciência da Computação Unisagrado">
+                    </div>
+                </div>
+        
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Apoio</h2>
+                    </div>
+                    <div class="card-body">
+                       <img class="img-fluid" src="./assets/coordenadoria-de-extensao.jpg" alt="Logo coordenadoria de extensao Unisagrado">
                     </div>
                 </div>
             </div>
         </section>
+
         
-
-
     </main>
     <footer class="bg-dark text-light py-4">
         <div class="container">
@@ -134,11 +167,12 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- Firebase App (base) -->
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
     <!-- Firebase Firestore -->
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
 
-    <script type="module" src="calendarios.js"></script>
+    <script type="module" src="noticias.js"></script>
 </body>
 
 </html>
